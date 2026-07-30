@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "తెలుగు",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "కాల్",
+    "decoy": "డికాయ్",
+    "shield": "షీల్డ్",
+    "report": "రిపోర్ట్",
+    "contacts": "సంప్రదింపులు",
+    "signOut": "సైన్ అవుట్",
+    "staySafe": "సురక్షితంగా ఉండండి"
+  },
+  "lang": {
+    "choose": "భాష"
+  },
+  "home": {
+    "learnTitle": "సురక్షితంగా ఉండటం నేర్చుకోండి",
+    "learnCta": "సురక్షితంగా ఉండటం నేర్చుకోండి"
+  },
+  "guide": {
+    "title": "సురక్షితంగా ఉండండి",
+    "c2": {
+      "phrase": "అసలు పోలీసులు ఎప్పుడూ ఫోన్ చేయరు."
+    }
+  }
+}

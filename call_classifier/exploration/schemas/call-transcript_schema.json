@@ -1,0 +1,83 @@
+{
+  "file": "BETTER30.csv",
+  "n_rows": 650,
+  "columns": {
+    "CONVERSATION_ID": {
+      "dtype": "str(csv)",
+      "n_non_empty": 650,
+      "n_unique": 65,
+      "examples": [
+        "6",
+        "6",
+        "6",
+        "6"
+      ]
+    },
+    "CONVERSATION_STEP": {
+      "dtype": "str(csv)",
+      "n_non_empty": 650,
+      "n_unique": 17,
+      "examples": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "TEXT": {
+      "dtype": "str(csv)",
+      "n_non_empty": 650,
+      "n_unique": 584,
+      "examples": [
+        "Good morning, this is [Your Name]'s personal assistant. How can I help you today?",
+        "Hello, my name is Jamie. I'm interested in volunteering... [Step: 1] Good morning, Jamie! It's wonderful to hear about your interest in volunteering. We're always looking for passionate individuals to join our efforts.",
+        "Yes, I'm really passionate about environmental conservation... [Step: 2] That's fantastic, Jamie. There are no specific requirements; we welcome volunteers of all backgrounds. The main need is for willingness to participate and follow the event guidelines for safety and effectiveness.",
+        "Great, how do I sign up, and where can I find more information... [Step: 3] You can sign up through our official website. There's a volunteer registration section where you'll find all the information about the event, including date, location, and what to bring. Would you like me to guide you to the webpage or send you the link?"
+      ]
+    },
+    "CONTEXT": {
+      "dtype": "str(csv)",
+      "n_non_empty": 647,
+      "n_unique": 552,
+      "examples": [
+        "Standard opening exchange",
+        "Encourages the caller's interest",
+        "Reinforces anyone can volunteer",
+        "Demonstrates flexibility"
+      ]
+    },
+    "LABEL": {
+      "dtype": "str(csv)",
+      "n_non_empty": 650,
+      "n_unique": 21,
+      "examples": [
+        "neutral",
+        "neutral",
+        "neutral",
+        "neutral"
+      ]
+    },
+    "FEATURES": {
+      "dtype": "str(csv)",
+      "n_non_empty": 571,
+      "n_unique": 458,
+      "examples": [
+        "welcoming, positive_tone",
+        "inclusive",
+        "helpful_tone, offers_options",
+        "prompt_action"
+      ]
+    },
+    "ANNOTATIONS": {
+      "dtype": "str(csv)",
+      "n_non_empty": 255,
+      "n_unique": 243,
+      "examples": [
+        "Potential scam, no prior relationship",
+        " booking_inquiry\"",
+        " detail_inquiry\"",
+        " email_confirmation\""
+      ]
+    }
+  }
+}

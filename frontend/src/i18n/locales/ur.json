@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "اردو",
+    "dir": "rtl"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "کال",
+    "decoy": "ڈیکوائے",
+    "shield": "شیلڈ",
+    "report": "رپورٹ",
+    "contacts": "رابطے",
+    "signOut": "سائن آؤٹ",
+    "staySafe": "محفوظ رہیں"
+  },
+  "lang": {
+    "choose": "زبان"
+  },
+  "home": {
+    "learnTitle": "محفوظ رہنا سیکھیں",
+    "learnCta": "محفوظ رہنا سیکھیں"
+  },
+  "guide": {
+    "title": "محفوظ رہیں",
+    "c2": {
+      "phrase": "اصلی پولیس کبھی فون نہیں کرتی۔"
+    }
+  }
+}

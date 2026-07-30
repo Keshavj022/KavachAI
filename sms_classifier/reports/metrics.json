@@ -1,0 +1,500 @@
+{
+  "eda": {
+    "class_distribution": {
+      "binary": {
+        "legit": 4988,
+        "malicious": 907
+      },
+      "multiclass": {
+        "ham": 4988,
+        "spam": 729,
+        "smishing": 178
+      },
+      "by_source": {
+        "ham": {
+          "mishra": 492,
+          "uci": 4496
+        },
+        "spam": {
+          "mishra": 142,
+          "uci": 587
+        },
+        "smishing": {
+          "mishra": 178,
+          "uci": 0
+        }
+      },
+      "malicious_prevalence": 0.1539
+    },
+    "length": {
+      "ham": {
+        "median_chars": 53.0,
+        "median_words": 11.0
+      },
+      "spam": {
+        "median_chars": 147.0,
+        "median_words": 24.0
+      },
+      "smishing": {
+        "median_chars": 139.0,
+        "median_words": 22.0
+      }
+    },
+    "engineered": {
+      "ham": {
+        "digit_ratio": 0.004,
+        "upper_ratio": 0.081,
+        "punct_ratio": 0.062,
+        "n_scam_keywords": 0.105
+      },
+      "spam": {
+        "digit_ratio": 0.11,
+        "upper_ratio": 0.169,
+        "punct_ratio": 0.045,
+        "n_scam_keywords": 1.951
+      },
+      "smishing": {
+        "digit_ratio": 0.1,
+        "upper_ratio": 0.159,
+        "punct_ratio": 0.047,
+        "n_scam_keywords": 2.096
+      }
+    },
+    "attribute_presence": {
+      "has_url": {
+        "ham": 0.003,
+        "spam": 0.204,
+        "smishing": 0.32
+      },
+      "has_phone": {
+        "ham": 0.001,
+        "spam": 0.77,
+        "smishing": 0.674
+      },
+      "has_email": {
+        "ham": 0.0,
+        "spam": 0.014,
+        "smishing": 0.051
+      },
+      "has_currency": {
+        "ham": 0.007,
+        "spam": 0.339,
+        "smishing": 0.303
+      }
+    },
+    "top_tokens": {
+      "ham": [
+        "just",
+        "got",
+        "like",
+        "come",
+        "know",
+        "good",
+        "want",
+        "going",
+        "love",
+        "time",
+        "need",
+        "think",
+        "dont",
+        "tell",
+        "home"
+      ],
+      "spam": [
+        "free",
+        "txt",
+        "text",
+        "mobile",
+        "reply",
+        "stop",
+        "claim",
+        "just",
+        "send",
+        "new",
+        "nokia",
+        "win",
+        "contact",
+        "prize",
+        "won"
+      ],
+      "smishing": [
+        "claim",
+        "free",
+        "mobile",
+        "contact",
+        "reply",
+        "dear",
+        "customer",
+        "card",
+        "text",
+        "paytm",
+        "apple",
+        "account",
+        "update",
+        "draw",
+        "won"
+      ]
+    }
+  },
+  "split": {
+    "summary": {
+      "train": {
+        "n": 4125,
+        "binary": {
+          "legit": 3490,
+          "malicious": 635
+        },
+        "multiclass": {
+          "ham": 3490,
+          "spam": 511,
+          "smishing": 124
+        }
+      },
+      "val": {
+        "n": 885,
+        "binary": {
+          "legit": 749,
+          "malicious": 136
+        },
+        "multiclass": {
+          "ham": 749,
+          "spam": 109,
+          "smishing": 27
+        }
+      },
+      "test": {
+        "n": 885,
+        "binary": {
+          "legit": 749,
+          "malicious": 136
+        },
+        "multiclass": {
+          "ham": 749,
+          "spam": 109,
+          "smishing": 27
+        }
+      }
+    },
+    "feature_separability": {
+      "has_phone": 0.842,
+      "digit_ratio": 0.777,
+      "n_scam_keywords": 0.702,
+      "has_currency": 0.507,
+      "has_url": 0.424,
+      "n_chars": 0.403,
+      "n_words": 0.289,
+      "avg_word_len": 0.287,
+      "upper_ratio": 0.202,
+      "has_email": 0.129,
+      "punct_ratio": -0.118
+    }
+  },
+  "baselines": {
+    "binary": {
+      "logreg": {
+        "cv_macro_f1": 0.9797,
+        "val_macro_f1": 0.9642,
+        "fit_seconds": 3.4,
+        "cv_fp_rate": 0.0029,
+        "val_fp_rate": 0.004
+      },
+      "linear_svm": {
+        "cv_macro_f1": 0.9829,
+        "val_macro_f1": 0.9642,
+        "fit_seconds": 2.1,
+        "cv_fp_rate": 0.0009,
+        "val_fp_rate": 0.004
+      },
+      "multinomial_nb": {
+        "cv_macro_f1": 0.9784,
+        "val_macro_f1": 0.9644,
+        "fit_seconds": 1.4,
+        "cv_fp_rate": 0.0043,
+        "val_fp_rate": 0.0053
+      },
+      "complement_nb": {
+        "cv_macro_f1": 0.971,
+        "val_macro_f1": 0.9502,
+        "fit_seconds": 0.8,
+        "cv_fp_rate": 0.0115,
+        "val_fp_rate": 0.016
+      }
+    },
+    "multiclass": {
+      "logreg": {
+        "cv_macro_f1": 0.8412,
+        "val_macro_f1": 0.8412,
+        "fit_seconds": 2.6
+      },
+      "linear_svm": {
+        "cv_macro_f1": 0.8403,
+        "val_macro_f1": 0.8577,
+        "fit_seconds": 1.6
+      },
+      "multinomial_nb": {
+        "cv_macro_f1": 0.8222,
+        "val_macro_f1": 0.8457,
+        "fit_seconds": 0.8
+      },
+      "complement_nb": {
+        "cv_macro_f1": 0.7776,
+        "val_macro_f1": 0.8074,
+        "fit_seconds": 0.8
+      }
+    }
+  },
+  "transformer": {
+    "device": "mps",
+    "train_minutes": 2.38,
+    "epochs_run": 3.0,
+    "val_macro_f1": 0.976,
+    "val_fp_rate": 0.0067,
+    "val_accuracy": 0.9876,
+    "model_dir": "models/transformer_binary"
+  },
+  "evaluation": {
+    "binary_default_threshold": {
+      "logreg": {
+        "threshold": 0.5,
+        "accuracy": 0.9864,
+        "macro_f1": 0.9735,
+        "weighted_f1": 0.9863,
+        "malicious_precision": 0.9769,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9549,
+        "fp_rate": 0.004,
+        "roc_auc": 0.997,
+        "pr_auc": 0.9904,
+        "calibrated_prob": true
+      },
+      "linear_svm": {
+        "threshold": 0.5,
+        "accuracy": 0.9876,
+        "macro_f1": 0.9756,
+        "weighted_f1": 0.9874,
+        "malicious_precision": 0.9845,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9585,
+        "fp_rate": 0.0027,
+        "roc_auc": 0.9976,
+        "pr_auc": 0.993,
+        "calibrated_prob": false
+      },
+      "multinomial_nb": {
+        "threshold": 0.5,
+        "accuracy": 0.9887,
+        "macro_f1": 0.9783,
+        "weighted_f1": 0.9887,
+        "malicious_precision": 0.9632,
+        "malicious_recall": 0.9632,
+        "malicious_f1": 0.9632,
+        "fp_rate": 0.0067,
+        "roc_auc": 0.9885,
+        "pr_auc": 0.9776,
+        "calibrated_prob": true
+      },
+      "complement_nb": {
+        "threshold": 0.5,
+        "accuracy": 0.9842,
+        "macro_f1": 0.97,
+        "weighted_f1": 0.9843,
+        "malicious_precision": 0.9357,
+        "malicious_recall": 0.9632,
+        "malicious_f1": 0.9493,
+        "fp_rate": 0.012,
+        "roc_auc": 0.9885,
+        "pr_auc": 0.9776,
+        "calibrated_prob": true
+      },
+      "distilbert": {
+        "threshold": 0.5,
+        "accuracy": 0.9842,
+        "macro_f1": 0.9696,
+        "weighted_f1": 0.9842,
+        "malicious_precision": 0.9485,
+        "malicious_recall": 0.9485,
+        "malicious_f1": 0.9485,
+        "fp_rate": 0.0093,
+        "roc_auc": 0.9961,
+        "pr_auc": 0.9868,
+        "calibrated_prob": true
+      }
+    },
+    "binary_tuned_operating_point": {
+      "logreg": {
+        "threshold": 0.535,
+        "accuracy": 0.9876,
+        "macro_f1": 0.9756,
+        "weighted_f1": 0.9874,
+        "malicious_precision": 0.9845,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9585,
+        "fp_rate": 0.0027,
+        "roc_auc": 0.997,
+        "pr_auc": 0.9904,
+        "calibrated_prob": true,
+        "val_fp_rate": 0.004,
+        "val_roc_auc": 0.995,
+        "val_macro_f1": 0.9642
+      },
+      "linear_svm": {
+        "threshold": 0.505,
+        "accuracy": 0.9876,
+        "macro_f1": 0.9756,
+        "weighted_f1": 0.9874,
+        "malicious_precision": 0.9845,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9585,
+        "fp_rate": 0.0027,
+        "roc_auc": 0.9976,
+        "pr_auc": 0.993,
+        "calibrated_prob": false,
+        "val_fp_rate": 0.004,
+        "val_roc_auc": 0.9952,
+        "val_macro_f1": 0.9642
+      },
+      "multinomial_nb": {
+        "threshold": 0.745,
+        "accuracy": 0.9887,
+        "macro_f1": 0.9781,
+        "weighted_f1": 0.9887,
+        "malicious_precision": 0.9701,
+        "malicious_recall": 0.9559,
+        "malicious_f1": 0.963,
+        "fp_rate": 0.0053,
+        "roc_auc": 0.9885,
+        "pr_auc": 0.9776,
+        "calibrated_prob": true,
+        "val_fp_rate": 0.0027,
+        "val_roc_auc": 0.9941,
+        "val_macro_f1": 0.9663
+      },
+      "complement_nb": {
+        "threshold": 0.94,
+        "accuracy": 0.9887,
+        "macro_f1": 0.9781,
+        "weighted_f1": 0.9887,
+        "malicious_precision": 0.9701,
+        "malicious_recall": 0.9559,
+        "malicious_f1": 0.963,
+        "fp_rate": 0.0053,
+        "roc_auc": 0.9885,
+        "pr_auc": 0.9776,
+        "calibrated_prob": true,
+        "val_fp_rate": 0.0027,
+        "val_roc_auc": 0.9941,
+        "val_macro_f1": 0.9686
+      },
+      "distilbert": {
+        "threshold": 0.95,
+        "accuracy": 0.9864,
+        "macro_f1": 0.9735,
+        "weighted_f1": 0.9863,
+        "malicious_precision": 0.9769,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9549,
+        "fp_rate": 0.004,
+        "roc_auc": 0.9961,
+        "pr_auc": 0.9868,
+        "calibrated_prob": true,
+        "val_fp_rate": 0.004,
+        "val_roc_auc": 0.9951,
+        "val_macro_f1": 0.9712
+      }
+    },
+    "deployed": {
+      "winner": "linear_svm",
+      "artifact": "baseline_linear_svm_binary.joblib",
+      "threshold": 0.505,
+      "calibrated_probability": false,
+      "test_operating_point": {
+        "threshold": 0.505,
+        "accuracy": 0.9876,
+        "macro_f1": 0.9756,
+        "weighted_f1": 0.9874,
+        "malicious_precision": 0.9845,
+        "malicious_recall": 0.9338,
+        "malicious_f1": 0.9585,
+        "fp_rate": 0.0027,
+        "roc_auc": 0.9976,
+        "pr_auc": 0.993,
+        "calibrated_prob": false,
+        "val_fp_rate": 0.004,
+        "val_roc_auc": 0.9952,
+        "val_macro_f1": 0.9642
+      }
+    },
+    "multiclass_test": {
+      "logreg": {
+        "macro_f1": 0.7705,
+        "smishing_recall": 0.4444,
+        "smishing_precision": 0.5217,
+        "spam_recall": 0.8349
+      },
+      "linear_svm": {
+        "macro_f1": 0.7875,
+        "smishing_recall": 0.4444,
+        "smishing_precision": 0.6,
+        "spam_recall": 0.8624
+      },
+      "multinomial_nb": {
+        "macro_f1": 0.7394,
+        "smishing_recall": 0.2222,
+        "smishing_precision": 0.75,
+        "spam_recall": 0.9541
+      },
+      "complement_nb": {
+        "macro_f1": 0.6964,
+        "smishing_recall": 0.1481,
+        "smishing_precision": 0.6667,
+        "spam_recall": 0.945
+      }
+    },
+    "multiclass_best": "linear_svm"
+  },
+  "error_analysis": {
+    "model": "linear_svm",
+    "threshold": 0.505,
+    "false_positives": {
+      "count": 2,
+      "median_chars": 142.5,
+      "has_url_rate": 0.0,
+      "has_phone_rate": 0.5,
+      "by_source": {
+        "uci": 1,
+        "mishra": 1
+      },
+      "by_label": {
+        "ham": 2
+      }
+    },
+    "false_negatives": {
+      "count": 9,
+      "median_chars": 139.0,
+      "has_url_rate": 0.0,
+      "has_phone_rate": 0.0,
+      "by_source": {
+        "uci": 6,
+        "mishra": 3
+      },
+      "by_label": {
+        "spam": 8,
+        "smishing": 1
+      }
+    },
+    "example_false_positives": [
+      "This is ur face test ( 1 2 3 4 5 6 7 8 9  &lt;#&gt;  ) select any number i will tell ur face astrology.... am waiting. quick reply...",
+      "Your account has been refilled successfully by INR 100.00; . Your KeralaCircle prepaid account balance is Rs.101.00 ; . Your Transaction ID is KR 3567 ."
+    ],
+    "example_false_negatives": [
+      "Do you realize that in about 40 years, we'll have thousands of old ladies running around with tattoos?",
+      "dating:i have had two of these. Only started after i sent a text to talk sport radio last week. Any connection do you think or coincidence?",
+      "ROMCA Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.",
+      "ROMCAPspam Everyone around should be responding well to your presence since you are so warm and outgoing. You are bringing in a real breath of sunshine.",
+      "Sunshine Hols. To claim ur med holiday send a stamped self address envelope to Drinks on Us UK, PO Box 113, Bray, Wicklow, Eire. Quiz Starts Saturday!",
+      "Sunshine Hols. To claim ur med holiday send a stamped self address envelope to Drinks on Us UK, PO Box 113, Bray, Wicklow, Eire. Quiz Starts Saturday! Unsub Stop",
+      "Dear customer,Your Apple 1D is due to expire today Prevent this by confiming your Apple ID at ataligaid daal.au",
+      "You have an important customer service announcement from PREMIER."
+    ]
+  }
+}

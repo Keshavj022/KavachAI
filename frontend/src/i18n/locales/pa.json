@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "ਪੰਜਾਬੀ",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "ਕਾਲ",
+    "decoy": "ਡਿਕੌਏ",
+    "shield": "ਸ਼ੀਲਡ",
+    "report": "ਰਿਪੋਰਟ",
+    "contacts": "ਸੰਪਰਕ",
+    "signOut": "ਸਾਈਨ ਆਊਟ",
+    "staySafe": "ਸੁਰੱਖਿਅਤ ਰਹੋ"
+  },
+  "lang": {
+    "choose": "ਭਾਸ਼ਾ"
+  },
+  "home": {
+    "learnTitle": "ਸੁਰੱਖਿਅਤ ਰਹਿਣਾ ਸਿੱਖੋ",
+    "learnCta": "ਸੁਰੱਖਿਅਤ ਰਹਿਣਾ ਸਿੱਖੋ"
+  },
+  "guide": {
+    "title": "ਸੁਰੱਖਿਅਤ ਰਹੋ",
+    "c2": {
+      "phrase": "ਅਸਲੀ ਪੁਲਿਸ ਕਦੇ ਫ਼ੋਨ ਨਹੀਂ ਕਰਦੀ."
+    }
+  }
+}

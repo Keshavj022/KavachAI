@@ -1,0 +1,42 @@
+{
+  "file": "FullTranscriptData.csv",
+  "n_rows": 243,
+  "columns": {
+    "ID": {
+      "n_unique": 243,
+      "examples": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "Source": {
+      "n_unique": 222,
+      "examples": [
+        "https://www.youtube.com/watch?v=UG-KjCSt14k&ab_channel=JimBrowning",
+        "https://www.patreon.com/JimBrowning/posts?filters[media_types]=audio",
+        "https://www.youtube.com/watch?v=P6dhteJIY48&ab_channel=JimBrowning",
+        "https://www.youtube.com/watch?v=HlTpousFPsM&ab_channel=FTCvideos"
+      ]
+    },
+    "Content": {
+      "n_unique": 243,
+      "examples": [
+        "hi yeah I've got an email here about a laptop I didn't order can you help with that yeah can you help me out with you order ID number please yeah so I can see it's an auto phone microsoft surface pro what do you want to know",
+        "Hello This is British Telecom technical department we are hereby to inform you that your internet line will be terminated from today onwards to fix up the problem please press one to connect with BT thank you for your response we would now like to transfer you to a team manager for just a few more q\n\u2026[TRUNCATED \u2014 398 chars total]",
+        "hello this call is from Interpol the purpose of this call is to inform you that your Austrian identity has been misused for fraudulent and illegal activity for more information press one",
+        "hi this is from Amazon customer service we have seen a recent order number amz-0987 of iPhone 11 Pro on your account which is billed on your card attached to your Amazon account the amount charged in 1499 we noticed some suspicious activity on your account so we have put in hold to this transaction \n\u2026[TRUNCATED \u2014 361 chars total]"
+      ]
+    },
+    "Char_Len": {
+      "n_unique": 214,
+      "examples": [
+        "224",
+        "398",
+        "186",
+        "361"
+      ]
+    }
+  }
+}

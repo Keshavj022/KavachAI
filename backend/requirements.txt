@@ -1,0 +1,71 @@
+# --- Core web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+websockets==14.1
+
+# --- Data / ORM / validation ---
+SQLAlchemy==2.0.36
+pydantic==2.10.4
+pydantic[email]==2.10.4
+email-validator==2.2.0
+pydantic-settings==2.7.1
+python-dotenv==1.0.1
+
+# --- Auth / security ---
+PyJWT==2.10.1
+passlib[bcrypt]==1.7.4
+# Pinned to 4.0.1: passlib 1.7.4 reads bcrypt.__about__ which was removed in
+# bcrypt 4.1+, producing a noisy (harmless) warning. 4.0.1 avoids it.
+bcrypt==4.0.1
+slowapi==0.1.9
+
+# --- HTTP client (Ollama, Twilio fallback) ---
+httpx==0.28.1
+
+# --- Evidence crypto ---
+cryptography==44.0.0
+
+# --- Graph ---
+networkx==3.4.2
+
+# --- Trained on-device models (call classifier + arc tracker + SMS SVM) ---
+# Required at runtime to load and run the trained scikit-learn pipelines. The
+# call and SMS paths fall back to rules if the model artifacts are absent, but
+# these libraries must be installed to use the trained models.
+scikit-learn==1.5.2
+joblib==1.4.2
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3    # used by the SMS model's engineered-features transformer
+
+# --- Alerts (optional at runtime) ---
+twilio==9.4.1
+
+# --- ML / detection (optional at runtime; app has fallbacks if these
+#     are absent or fail to load — see services/*.py) ---
+# NOTE: faster-whisper, torch, transformers, sentence-transformers and
+# chromadb are heavy and platform-sensitive. They are listed so a full
+# install is reproducible, but every service that uses them degrades to a
+# rule-based / zero-shot fallback if the import or model load fails.
+faster-whisper==1.1.0
+sentence-transformers==3.3.1
+chromadb==0.5.23
+# transformers and torch are pulled in transitively by sentence-transformers;
+# pin them explicitly if you plan to run train_classifier.py:
+# torch==2.5.1
+# transformers==4.47.1
+
+# --- Decoy Agent voice — OPTIONAL ---
+# Primary engine: Svara-TTS (kenpath/svara-tts-v1, Apache 2.0), an Orpheus-style
+# 3B model that emits audio tokens decoded by the SNAC 24 kHz codec. `snac` +
+# `transformers`/`torch` are enough to PRE-GENERATE the demo clips locally
+# (python -m app.ml.pregen_demo). For real-time synthesis in the deployed build,
+# also install vLLM on a GPU and set SVARA_BACKEND=vllm:
+#   pip install snac
+#   pip install "vllm>=0.17.0"        # GPU only; not available on macOS
+snac==1.2.1
+# Legacy engine (TTS_ENGINE=parler): AI4Bharat's Indic Parler-TTS, from git:
+#   pip install git+https://github.com/huggingface/parler-tts.git
+# soundfile is used by the Parler path to encode WAV:
+soundfile==0.14.0

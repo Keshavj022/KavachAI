@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  /* Set by the i18n font loader to the active language's Noto face (empty for
+     Latin). Prepended to the font stack so Indic scripts render correctly. */
+  --script-font: "";
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--script-font) "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #f5f7fa;
+}
+
+/* Right-to-left languages (Urdu) mirror the layout. */
+[dir="rtl"] body {
+  font-family: var(--script-font) "Inter", system-ui, sans-serif;
+}
+
+/* Respect users who prefer reduced motion: neutralise the signature
+   animations rather than removing meaning. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Visible keyboard focus everywhere (accessibility floor). */
+:focus-visible {
+  outline: 3px solid #0b6e7a;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Leaflet map tiles need a defined height wherever used. */
+.leaflet-container {
+  background: #0e1522;
+}

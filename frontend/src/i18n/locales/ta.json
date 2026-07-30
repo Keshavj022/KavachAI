@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "தமிழ்",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "அழைப்பு",
+    "decoy": "டிகாய்",
+    "shield": "கவசம்",
+    "report": "புகார்",
+    "contacts": "தொடர்புகள்",
+    "signOut": "வெளியேறு",
+    "staySafe": "பாதுகாப்பாக இருங்கள்"
+  },
+  "lang": {
+    "choose": "மொழி"
+  },
+  "home": {
+    "learnTitle": "பாதுகாப்பாக இருப்பது எப்படி என்று அறியுங்கள்",
+    "learnCta": "பாதுகாப்பாக இருப்பது எப்படி என்று அறியுங்கள்"
+  },
+  "guide": {
+    "title": "பாதுகாப்பாக இருங்கள்",
+    "c2": {
+      "phrase": "உண்மையான போலீஸ் ஒருபோதும் அழைக்கமாட்டார்கள்."
+    }
+  }
+}

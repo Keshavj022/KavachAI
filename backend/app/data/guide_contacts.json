@@ -1,0 +1,77 @@
+{
+  "_note": "Verified against official Government of India sources as of July 2026. Numbers, portals and legal citations must not be altered.",
+  "helplines": [
+    {
+      "name": "National Cyber Crime Helpline",
+      "number": "1930",
+      "description": "24/7 financial cyber-fraud helpline, I4C (Ministry of Home Affairs). Call within the golden hour to freeze the destination account.",
+      "tel_link": "tel:1930"
+    },
+    {
+      "name": "National Emergency Number",
+      "number": "112",
+      "description": "Police, ambulance and fire — single national emergency number.",
+      "tel_link": "tel:112"
+    },
+    {
+      "name": "National Consumer Helpline",
+      "number": "1800-11-4000",
+      "description": "Consumer grievances, including deficient service by banks and payment providers.",
+      "tel_link": "tel:18001140000"
+    },
+    {
+      "name": "TRAI DND / Spam Complaints",
+      "number": "1909",
+      "description": "Report unsolicited commercial calls and SMS; DND registration.",
+      "tel_link": "tel:1909"
+    }
+  ],
+  "bank_fraud_helplines": [
+    { "name": "SBI", "number": "1800-1112-11", "tel_link": "tel:18001112211" },
+    { "name": "HDFC Bank", "number": "1800-202-6161", "tel_link": "tel:18002026161" },
+    { "name": "ICICI Bank", "number": "1800-1080", "tel_link": "tel:18001080" },
+    { "name": "Axis Bank", "number": "1800-419-5555", "tel_link": "tel:18004195555" },
+    { "name": "Kotak Mahindra", "number": "1860-266-2666", "tel_link": "tel:18602662666" },
+    { "name": "Punjab National Bank", "number": "1800-180-2222", "tel_link": "tel:18001802222" },
+    { "name": "Bank of Baroda", "number": "1800-258-4455", "tel_link": "tel:18002584455" },
+    { "name": "Canara Bank", "number": "1800-425-0018", "tel_link": "tel:18004250018" }
+  ],
+  "portals": [
+    {
+      "name": "NCRP — National Cyber Crime Reporting Portal",
+      "url": "https://cybercrime.gov.in",
+      "description": "File your cyber-fraud complaint online; get a complaint ID."
+    },
+    {
+      "name": "Chakshu — Report Suspected Fraud Communication",
+      "url": "https://sancharsaathi.gov.in/sfc/",
+      "description": "Report fraud calls and SMS to DoT; numbers can be blocked across networks."
+    },
+    {
+      "name": "Sanchar Saathi (DoT)",
+      "url": "https://sancharsaathi.gov.in",
+      "description": "Telecom safety services, including RICWIN for international spoofed numbers."
+    },
+    {
+      "name": "RBI Ombudsman (CMS)",
+      "url": "https://cms.rbi.org.in",
+      "description": "Escalation when a bank refuses to act on an unauthorised transaction."
+    },
+    {
+      "name": "I4C — Indian Cyber Crime Coordination Centre",
+      "url": "https://i4c.mha.gov.in",
+      "description": "The MHA body that operates 1930 and the CFCFRMS system."
+    }
+  ],
+  "legal_sections": [
+    { "section": "Section 63", "act": "BNSS 2023", "summary": "Electronic summons must be encrypted, digitally signed and bear a court seal — never served by a phone call." },
+    { "section": "Sections 204–205", "act": "BNS 2023", "summary": "Impersonating a public servant — up to 2 years' imprisonment." },
+    { "section": "Section 319", "act": "BNS 2023", "summary": "Cheating by personation." },
+    { "section": "Section 336", "act": "BNS 2023", "summary": "Forgery — covers fake FIRs and fake warrants." },
+    { "section": "Section 351", "act": "BNS 2023", "summary": "Criminal intimidation." },
+    { "section": "Section 154", "act": "BNSS 2023", "summary": "Zero FIR — any police station must register your complaint regardless of jurisdiction." },
+    { "section": "Section 66C", "act": "IT Act 2000", "summary": "Identity theft." },
+    { "section": "Section 66D", "act": "IT Act 2000", "summary": "Cheating by personation using a computer resource." },
+    { "section": "RBI/2017-18/15", "act": "RBI Circular, 6 July 2017", "summary": "Zero customer liability if an unauthorised transaction is reported within 3 working days; limited liability within 4–7 days; no protection after 7 days." }
+  ]
+}

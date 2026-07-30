@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "ଓଡ଼ିଆ",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "କଲ",
+    "decoy": "ଡିକଏ",
+    "shield": "ଶିଲ୍ଡ",
+    "report": "ରିପୋର୍ଟ",
+    "contacts": "ଯୋଗାଯୋଗ",
+    "signOut": "ସାଇନ ଆଉଟ",
+    "staySafe": "ସୁରକ୍ଷିତ ରୁହନ୍ତୁ"
+  },
+  "lang": {
+    "choose": "ଭାଷା"
+  },
+  "home": {
+    "learnTitle": "ସୁରକ୍ଷିତ ରହିବା ଶିଖନ୍ତୁ",
+    "learnCta": "ସୁରକ୍ଷିତ ରହିବା ଶିଖନ୍ତୁ"
+  },
+  "guide": {
+    "title": "ସୁରକ୍ଷିତ ରୁହନ୍ତୁ",
+    "c2": {
+      "phrase": "ପ୍ରକୃତ ପୋଲିସ କେବେ ଫୋନ କରନ୍ତି ନାହିଁ."
+    }
+  }
+}

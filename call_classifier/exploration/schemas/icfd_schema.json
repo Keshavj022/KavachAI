@@ -1,0 +1,48 @@
+{
+  "source_record_keys": {
+    "transcript": 31000,
+    "multimodal_analysis": 31000,
+    "key_entities": 31000,
+    "chunk_level_analysis": 30999,
+    "final_slow_thinking_rationale": 31000,
+    "final_verdict": 31000,
+    "violated_policies": 30999,
+    "scam_outcome": 31000,
+    "generation_metadata": 31000,
+    "session_id": 31000,
+    "agent_persona": 31000,
+    "customer_persona": 31000,
+    "scenario": 31000,
+    "release_metadata": 31000,
+    "chunk_level_analysis!": 1,
+    "violated_policies=": 1
+  },
+  "streaming_columns": [
+    "dataset",
+    "release_version",
+    "split",
+    "domain",
+    "source_batch",
+    "source_file_stem",
+    "chunk_file",
+    "conversation_uid",
+    "session_id",
+    "chunk_timestamp",
+    "final_verdict",
+    "slow_thinking_rationale",
+    "cumulative_text",
+    "cumulative_transcript_json",
+    "cumulative_audio_analysis_json",
+    "scenario_info_json",
+    "scenario_id",
+    "case_type",
+    "combination_key",
+    "multiplier_round",
+    "generated_at"
+  ],
+  "transcript_turn_shape": {
+    "speaker": "Agent|Customer",
+    "text": "str"
+  },
+  "stage_or_phase_field": "NONE explicit; chunk_level_analysis gives per-timestamp verdict_at_chunk (YES/NO) + rationale_at_chunk (free text)"
+}

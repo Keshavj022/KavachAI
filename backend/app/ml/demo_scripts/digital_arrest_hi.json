@@ -1,0 +1,40 @@
+{
+  "id": "digital_arrest_hi",
+  "title": "Digital Arrest — Hindi",
+  "language": "hi",
+  "turns": [
+    {
+      "speaker": "scammer",
+      "text": "Namaste, main Inspector Sharma bol raha hoon, CBI Delhi se. Aapka naam Ramesh Chandra Sharma hai?",
+      "delay_ms": 1000,
+      "agent_text": "Haan ji, main Ramesh Chandra Sharma bol raha hoon. CBI se? Kya hua ji?"
+    },
+    {
+      "speaker": "scammer",
+      "text": "Aapke naam par ek parcel intercept hua hai Mumbai customs mein. Usme banned substances aur fake passports mile hain. Yeh bahut serious matter hai.",
+      "delay_ms": 3000,
+      "agent_text": "Parcel? Maine toh koi parcel nahi bheja ji. Mujhe kuch samajh nahi aa raha, thoda dheere boliye."
+    },
+    {
+      "speaker": "scammer",
+      "text": "Aapka Aadhaar ek money laundering case se juda hai. Aapke naam par arrest warrant nikla hai. Aap abhi digital arrest mein hain.",
+      "delay_ms": 3000,
+      "agent_text": "Arrest? Nahi nahi ji, maine kuch galat nahi kiya. Main toh LIC mein tha, retire ho gaya. Yeh sab kya hai?"
+    },
+    {
+      "speaker": "scammer",
+      "text": "Aapko kisi ko bhi nahi batana, yeh confidential hai. Call disconnect mat karna. Aur ek zaroori baat, yeh RBI verification UPI likh lijiye: rbi.verify@hdfcbank, aur IFSC code HDFC0001234. Abhi kuch mat kariye, sirf likh lijiye.",
+      "delay_ms": 3000,
+      "agent_text": "Ruko ji, main pen dhundta hoon... mera chashma bhi kahin rakha hai. UPI phir se boliye, main dheere dheere likh raha hoon."
+    },
+    {
+      "speaker": "scammer",
+      "text": "Ab aapko 2 lakh rupaye us account mein transfer karna hoga, abhi ke abhi. 24 ghante mein wapas aa jayega.",
+      "delay_ms": 3000,
+      "agent_text": "Do lakh? Itne paise... ruko ji, main apne bete ko phone karta hoon, woh yeh online ka kaam samajhta hai. Main abhi wapas call karta hoon."
+    }
+  ],
+  "expected_arc": ["authority_claim", "accusation", "isolation", "money_demand"],
+  "expected_interrupt_before_turn": 4,
+  "notes": "UPI + IFSC are primed at the isolation turn (turn 4) so they are captured before the explicit money-demand turn (turn 5), while the scam is already confirmed at isolation."
+}

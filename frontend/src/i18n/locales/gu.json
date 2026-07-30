@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "ગુજરાતી",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "કૉલ",
+    "decoy": "ડિકૉય",
+    "shield": "શીલ્ડ",
+    "report": "રિપોર્ટ",
+    "contacts": "સંપર્કો",
+    "signOut": "સાઇન આઉટ",
+    "staySafe": "સુરક્ષિત રહો"
+  },
+  "lang": {
+    "choose": "ભાષા"
+  },
+  "home": {
+    "learnTitle": "સુરક્ષિત રહેવાનું શીખો",
+    "learnCta": "સુરક્ષિત રહેવાનું શીખો"
+  },
+  "guide": {
+    "title": "સુરક્ષિત રહો",
+    "c2": {
+      "phrase": "સાચી પોલીસ ક્યારેય ફોન કરતી નથી."
+    }
+  }
+}

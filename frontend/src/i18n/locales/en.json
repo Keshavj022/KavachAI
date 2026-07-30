@@ -1,0 +1,123 @@
+{
+  "_meta": { "nativeName": "English", "dir": "ltr" },
+  "nav": {
+    "call": "Call",
+    "decoy": "Decoy",
+    "shield": "Shield",
+    "report": "Report",
+    "contacts": "Contacts",
+    "staySafe": "Stay Safe",
+    "signOut": "Sign out"
+  },
+  "lang": { "choose": "Language" },
+  "home": {
+    "learnTitle": "Learn how to stay safe",
+    "learnBody": "A five-minute guide to spotting a scam call, your legal rights, and exactly what to do in the first hour.",
+    "learnCta": "Open the safety guide"
+  },
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "source": "Source"
+  },
+  "guide": {
+    "title": "Stay Safe",
+    "subtitle": "How to recognise a scam, your rights, and what to do — in your language.",
+    "progress": "Chapter {{current}} of {{total}}",
+    "chapters": {
+      "one": { "kicker": "Chapter 1 of 5", "title": "The call that changes everything" },
+      "two": { "kicker": "Chapter 2 of 5", "title": "Five words that end any scam" },
+      "three": { "kicker": "Chapter 3 of 5", "title": "Your rights as a citizen" },
+      "four": { "kicker": "Chapter 4 of 5", "title": "If it happens: the first hour" },
+      "five": { "kicker": "Chapter 5 of 5", "title": "Know all your numbers" }
+    },
+    "c1": {
+      "intro": "It starts like any other evening. The phone rings. The voice on the other end sounds official, urgent, and certain.",
+      "victimLabel": "At home",
+      "victimName": "Raju uncle, 68",
+      "operationLabel": "The operation",
+      "operationName": "A scam call centre",
+      "dialogue": {
+        "scammer1": "Namaste, I am Inspector Sharma from the CBI, Delhi. A parcel in your name was caught at Mumbai customs. It contained drugs. You are now under 'digital arrest'.",
+        "raju1": "What? Me? I don't know anything about this... I only...",
+        "scammer2": "Tell no one. This is a sub-judice matter. Keep your camera on. We will investigate you fully. Then you must transfer 3 lakh rupees to a 'safe RBI account'."
+      },
+      "keyFactHeadline": "\"Digital arrest\" does not exist in Indian law.",
+      "keyFactSource": "Supreme Court of India, 2025",
+      "facts": {
+        "loss": "₹22,495 crore was lost to cyber fraud in 2025.",
+        "targets": "Favourite targets: people over 50, retired professionals, and government employees.",
+        "arc": "The scam always follows four steps: Authority → Accusation → Isolation → Money demand."
+      },
+      "arc": {
+        "authority": { "label": "Authority", "line": "\"I am from the CBI\"" },
+        "accusation": { "label": "Accusation", "line": "\"Drugs were found\"" },
+        "isolation": { "label": "Isolation", "line": "\"Tell no one\"" },
+        "money": { "label": "Money demand", "line": "\"Transfer 3 lakh\"" }
+      }
+    },
+    "c2": {
+      "intro": "This time, Raju uncle has Kavach on his phone. The confidence meter climbs. The warning appears. He reads it, and looks back at the caller — calm.",
+      "rajuLine": "\"Alright. Give me one minute.\"",
+      "rajuAfter": "He calls his son. He hangs up. The fake police station falls apart.",
+      "fiveWordsIntro": "Remember five words. They end any scam call instantly.",
+      "phrase": "Real police never call you.",
+      "words": ["REAL", "POLICE", "NEVER", "CALL", "YOU"],
+      "signsIntro": "Six signs it is a scam",
+      "signs": {
+        "s1": { "title": "They demand secrecy", "quote": "\"Don't tell your family. This is confidential.\"", "detail": "Real investigations involve your lawyer, not secrecy." },
+        "s2": { "title": "They demand money on the call", "quote": "\"Transfer to an RBI/CBI verification account.\"", "detail": "No government body collects money over a phone call. Ever." },
+        "s3": { "title": "They keep you on video all day", "quote": "\"Keep your camera on for 24 hours.\"", "detail": "No legal process requires continuous video surveillance from your home." },
+        "s4": { "title": "They use fear to stop you thinking", "quote": "\"You will be arrested in one hour.\"", "detail": "Pressure and urgency are tools, not law." },
+        "s5": { "title": "The number looks Indian but sounds foreign", "quote": "Distorted audio, routed through VoIP.", "detail": "Report it via Chakshu at sancharsaathi.gov.in." },
+        "s6": { "title": "They already know your name and Aadhaar", "quote": "This makes it seem real.", "detail": "Your Aadhaar number is widely available. It proves nothing." }
+      }
+    },
+    "c3": {
+      "intro": "Priya, a lawyer, explains the rights that dismantle the scam's premise. A citizen who knows these cannot be trapped.",
+      "rights": {
+        "r1": { "title": "There is no such thing as \"digital arrest\"", "body": "The Supreme Court of India confirmed in 2025 that \"digital arrest\" has no legal basis under the Bharatiya Nyaya Sanhita (BNS), 2023, the Bharatiya Nagrik Suraksha Sanhita (BNSS), 2023, or any Indian law. A police officer cannot arrest you over a video call. A summons under Section 63 BNSS must be encrypted, digitally signed, and bear a court seal — it is never served by a phone call.", "source": "Supreme Court of India, Digital Arrest Suo Moto Case (2025)" },
+        "r2": { "title": "No government body collects money by phone", "body": "No CBI, ED, TRAI, RBI, Customs, or court collects money via UPI, bank transfer, or WhatsApp. Any such demand is fraud. Impersonating a public servant is an offence under Sections 204 and 205 of the BNS, punishable by up to two years' imprisonment.", "source": "BNS 2023, Sections 204–205" },
+        "r3": { "title": "The 1-hour \"golden hour\" for recovery", "body": "If you have transferred money, calling 1930 within 1–2 hours can freeze the destination account before the money is withdrawn. The Citizen Financial Cyber Fraud Reporting and Management System (CFCFRMS) connects 85+ banks and payment intermediaries. More than ₹7,130 crore has been saved through prompt 1930 reporting.", "source": "Ministry of Home Affairs, Lok Sabha, December 2025" },
+        "r4": { "title": "Zero liability if reported within 3 days", "body": "Under the RBI circular of 6 July 2017, if an unauthorised transaction occurs and you report it to your bank within 3 working days, your liability is zero — the bank must refund you. Between 4–7 days: limited liability (₹5,000–₹25,000 cap). After 7 days: you bear the loss. Time is everything.", "source": "RBI Circular RBI/2017-18/15, DBR.No.Leg.BC.78/09.07.005/2017-18" },
+        "r5": { "title": "You can file an FIR anywhere in India", "body": "Cybercrime has pan-India jurisdiction under the IT Act. Under Section 154 BNSS (Zero FIR), any police station must register your complaint regardless of where the crime occurred. For losses above ₹10 lakh, complaints to 1930/NCRP automatically generate a Zero FIR with the e-Crime Police Station, Delhi.", "source": "IT Act 2000; BNSS 2023, Section 154; MHA e-Zero FIR initiative, May 2025" },
+        "r6": { "title": "The banking ombudsman is your escalation", "body": "If your bank refuses to help, file a complaint with the RBI Ombudsman. Banks must respond within 10 working days of a fraud complaint. The RBI can direct banks to refund unauthorised debits.", "source": "RBI Ombudsman Scheme, cms.rbi.org.in" }
+      }
+    },
+    "c4": {
+      "intro": "The exact sequence for the 60 minutes after a fraud. Every minute saved increases the chance of recovery.",
+      "clockLabel": "minutes remaining",
+      "steps": {
+        "s1": { "when": "Within 5 minutes", "remaining": "55 minutes remaining", "title": "Call 1930", "number": "1930", "body": "1930 is India's national cyber-fraud helpline, run 24/7 by I4C (Ministry of Home Affairs). Tell the operator your name, your bank, the amount, when it happened, and the destination UPI or account if you know it. The operator coordinates with your bank and the destination bank to freeze the account. This is the golden hour — every minute matters." },
+        "s2": { "when": "Within 15 minutes", "remaining": "45 minutes remaining", "title": "Call your bank", "body": "Call your bank's 24/7 fraud helpline immediately. Say: \"Unauthorised UPI transaction, please freeze my account.\" Get a written or SMS reference number — this is your evidence trail.", "banksLabel": "Bank fraud helplines" },
+        "s3": { "when": "Within 30 minutes", "remaining": "30 minutes remaining", "title": "File on NCRP", "body": "Go to cybercrime.gov.in and click \"Report Financial Fraud\". You will need the fraudster's phone/UPI/account, the amount, the date and time, and your transaction screenshot. You receive a complaint ID — save it and share it with your bank. Or open Kavach and tap \"Report to 1930\" — the form is pre-filled from the call." },
+        "s4": { "when": "Within 1 hour", "remaining": "0 minutes remaining", "title": "Report the number to Chakshu", "body": "Go to sancharsaathi.gov.in/sfc/ and report the fraud number under \"Chakshu — Report Suspected Fraud Communication\". Select \"Impersonation as government official\". DoT can block the number across all telecom networks. Report international spoofed numbers via the RICWIN module on the same portal." }
+      },
+      "afterTitle": "After the first hour",
+      "after": {
+        "a1": "Follow up with your bank every 48 hours until it is resolved — do not wait passively.",
+        "a2": "If police are unresponsive, escalate to the Superintendent of Police (SP) cyber cell in your district.",
+        "a3": "If the bank refuses to refund, file with the RBI Ombudsman at cms.rbi.org.in.",
+        "a4": "Keep every record: screenshots, bank statements, call logs, and complaint IDs."
+      }
+    },
+    "c5": {
+      "cardTitle": "Kavach emergency contacts",
+      "cardSubtitle": "Save these now",
+      "remember": {
+        "title": "Remember",
+        "r1": "Real police never call. They send physical notices.",
+        "r2": "No government body takes money over the phone.",
+        "r3": "Call 1930 within 60 minutes. Every minute counts.",
+        "r4": "You can hang up. You are not in trouble."
+      },
+      "share": "Share this card",
+      "shareHint": "Send it to your family. One share can protect fifty people.",
+      "generating": "Preparing image…"
+    },
+    "footer": {
+      "attribution": "Character illustrations are original SVG artwork created for Kavach.",
+      "disclaimer": "Helpline numbers and legal references were verified against official government sources as of July 2026. This guide is public-safety information, not legal advice."
+    }
+  }
+}

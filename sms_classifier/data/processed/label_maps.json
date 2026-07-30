@@ -1,0 +1,21 @@
+{
+  "binary_map": {
+    "ham": 0,
+    "spam": 1,
+    "smishing": 1
+  },
+  "binary_names": {
+    "0": "legit",
+    "1": "malicious"
+  },
+  "multiclass_map": {
+    "ham": 0,
+    "spam": 1,
+    "smishing": 2
+  },
+  "multiclass_names": {
+    "0": "ham",
+    "1": "spam",
+    "2": "smishing"
+  }
+}

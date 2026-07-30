@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "मराठी",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "कॉल",
+    "decoy": "डिकॉय",
+    "shield": "शील्ड",
+    "report": "रिपोर्ट",
+    "contacts": "संपर्क",
+    "signOut": "साइन आउट",
+    "staySafe": "सुरक्षित राहा"
+  },
+  "lang": {
+    "choose": "भाषा"
+  },
+  "home": {
+    "learnTitle": "सुरक्षित राहणे शिका",
+    "learnCta": "सुरक्षित राहणे शिका"
+  },
+  "guide": {
+    "title": "सुरक्षित राहा",
+    "c2": {
+      "phrase": "खरी पोलीस कधीही फोन करत नाही."
+    }
+  }
+}

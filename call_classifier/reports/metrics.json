@@ -1,0 +1,163 @@
+{
+  "classifier": {
+    "models": {
+      "linear_svm": {
+        "val_macro_f1": 0.9339,
+        "val_scam_recall": 0.9007,
+        "val_fp_rate": 0.0286,
+        "val_roc_auc": 0.9827,
+        "threshold": 0.575,
+        "calibrated_prob": false,
+        "model_size_mb": 12.38,
+        "latency_ms_per_chunk": 0.893,
+        "fit_seconds": 130.0
+      },
+      "logreg": {
+        "val_macro_f1": 0.9335,
+        "val_scam_recall": 0.9,
+        "val_fp_rate": 0.0288,
+        "val_roc_auc": 0.984,
+        "threshold": 0.735,
+        "calibrated_prob": true,
+        "model_size_mb": 12.38,
+        "latency_ms_per_chunk": 0.884,
+        "fit_seconds": 135.6
+      },
+      "complement_nb": {
+        "val_macro_f1": 0.9108,
+        "val_scam_recall": 0.9002,
+        "val_fp_rate": 0.0769,
+        "val_roc_auc": 0.9686,
+        "threshold": 0.845,
+        "calibrated_prob": true,
+        "model_size_mb": 24.18,
+        "latency_ms_per_chunk": 2.14,
+        "fit_seconds": 123.5
+      },
+      "distilbert": {
+        "val_macro_f1": 0.9402,
+        "train_minutes": 40.09,
+        "model_size_mb": 268.8,
+        "note": "trained on 40000 sampled chunks"
+      }
+    },
+    "deployed": {
+      "winner": "logreg",
+      "artifact": "call_baseline_logreg.joblib",
+      "threshold": 0.735,
+      "calibrated_probability": true,
+      "val_metrics": {
+        "val_macro_f1": 0.9335,
+        "val_scam_recall": 0.9,
+        "val_fp_rate": 0.0288,
+        "val_roc_auc": 0.984,
+        "threshold": 0.735,
+        "calibrated_prob": true,
+        "model_size_mb": 12.38,
+        "latency_ms_per_chunk": 0.884,
+        "fit_seconds": 135.6
+      }
+    }
+  },
+  "arc_tracker": {
+    "stages": [
+      "none",
+      "authority_claim",
+      "accusation",
+      "isolation",
+      "money_demand"
+    ],
+    "model": "tfidf+logreg multinomial",
+    "monotonic_enforced_at_inference": true,
+    "n_train_examples": 5325,
+    "model_size_mb": 2.48,
+    "note": "Per-chunk stage classifier; the backend enforces monotonicity across a call (stage never regresses)."
+  },
+  "evaluation": {
+    "deployed": "logreg",
+    "threshold": 0.735,
+    "test_sets": {
+      "icfd_test": {
+        "n_chunks": 36952,
+        "macro_f1": 0.9346,
+        "scam_recall": 0.9022,
+        "fp_rate": 0.0286,
+        "roc_auc": 0.9851,
+        "pr_auc": 0.9875,
+        "per_case_type": {
+          "Ambiguous but Ultimately Normal": {
+            "kind": "legit",
+            "n": 5958,
+            "scam_prevalence": 0.0094,
+            "fp_rate": 0.0205
+          },
+          "Clear Fraud": {
+            "kind": "scam",
+            "n": 12862,
+            "recall": 0.9371
+          },
+          "Clear Normal": {
+            "kind": "legit",
+            "n": 11886,
+            "scam_prevalence": 0.063,
+            "fp_rate": 0.0319
+          },
+          "Subtle Fraud": {
+            "kind": "scam",
+            "n": 6246,
+            "recall": 0.9123
+          }
+        }
+      },
+      "youtube_scam": {
+        "n": 243,
+        "all_scam": true,
+        "recall": 0.5556
+      },
+      "call_center_test": {
+        "n": 5781,
+        "all_legit": true,
+        "fp_rate": 0.0
+      }
+    },
+    "model_comparison": {
+      "linear_svm": {
+        "val_macro_f1": 0.9339,
+        "val_fp_rate": 0.0286,
+        "val_roc_auc": 0.9827,
+        "model_size_mb": 12.38,
+        "latency_ms_per_chunk": 0.922
+      },
+      "logreg": {
+        "val_macro_f1": 0.9335,
+        "val_fp_rate": 0.0288,
+        "val_roc_auc": 0.984,
+        "model_size_mb": 12.38,
+        "latency_ms_per_chunk": 0.909
+      },
+      "complement_nb": {
+        "val_macro_f1": 0.9108,
+        "val_fp_rate": 0.0769,
+        "val_roc_auc": 0.9686,
+        "model_size_mb": 24.18,
+        "latency_ms_per_chunk": 1.972
+      },
+      "distilbert": {
+        "val_macro_f1": null,
+        "val_fp_rate": null,
+        "val_roc_auc": null,
+        "model_size_mb": null,
+        "latency_ms_per_chunk": null
+      }
+    },
+    "lead_time": {
+      "n_calls": 150,
+      "interrupt_fired": 114,
+      "calls_with_money_demand": 67,
+      "fired_before_money_demand": 48,
+      "median_lead_turns": 0.0,
+      "mean_lead_turns": 0.63,
+      "median_lead_seconds": 0.0
+    }
+  }
+}

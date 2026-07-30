@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "বাংলা",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "কল",
+    "decoy": "ডিকয়",
+    "shield": "শিল্ড",
+    "report": "রিপোর্ট",
+    "contacts": "যোগাযোগ",
+    "signOut": "সাইন আউট",
+    "staySafe": "নিরাপদ থাকুন"
+  },
+  "lang": {
+    "choose": "ভাষা"
+  },
+  "home": {
+    "learnTitle": "নিরাপদ থাকা শিখুন",
+    "learnCta": "নিরাপদ থাকা শিখুন"
+  },
+  "guide": {
+    "title": "নিরাপদ থাকুন",
+    "c2": {
+      "phrase": "আসল পুলিশ কখনো ফোন করে না।"
+    }
+  }
+}

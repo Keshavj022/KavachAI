@@ -1,0 +1,17 @@
+# Call-model training pipeline (Python 3.11-3.13).
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.14.1
+matplotlib==3.9.2
+pyarrow==18.1.0
+zstandard==0.23.0
+joblib==1.4.2
+httpx==0.28.1          # Groq annotation (build-time only)
+python-dotenv==1.0.1   # load GROQ_API_KEY from repo .env at build time
+
+# Transformer head-to-head (optional; pipeline runs without it):
+torch==2.8.0
+transformers==4.46.3
+datasets==3.1.0
+accelerate==1.1.1

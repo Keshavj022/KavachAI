@@ -1,0 +1,10 @@
+{
+  "rows_before_dedup": 11543,
+  "exact_raw_duplicates_removed": 4735,
+  "near_duplicates_removed": 909,
+  "total_removed": 5644,
+  "rows_after_dedup": 5895,
+  "duplicate_groups": 736,
+  "cross_dataset_overlap_rows": 1498,
+  "label_conflict_groups": 203
+}

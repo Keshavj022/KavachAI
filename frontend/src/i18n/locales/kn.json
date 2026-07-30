@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "ಕನ್ನಡ",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "ಕರೆ",
+    "decoy": "ಡಿಕಾಯ್",
+    "shield": "ಶೀಲ್ಡ್",
+    "report": "ವರದಿ",
+    "contacts": "ಸಂಪರ್ಕಗಳು",
+    "signOut": "ಸೈನ್ ಔಟ್",
+    "staySafe": "ಸುರಕ್ಷಿತವಾಗಿರಿ"
+  },
+  "lang": {
+    "choose": "ಭಾಷೆ"
+  },
+  "home": {
+    "learnTitle": "ಸುರಕ್ಷಿತವಾಗಿರುವುದನ್ನು ಕಲಿಯಿರಿ",
+    "learnCta": "ಸುರಕ್ಷಿತವಾಗಿರುವುದನ್ನು ಕಲಿಯಿರಿ"
+  },
+  "guide": {
+    "title": "ಸುರಕ್ಷಿತವಾಗಿರಿ",
+    "c2": {
+      "phrase": "ನಿಜವಾದ ಪೊಲೀಸರು ಎಂದಿಗೂ ಕರೆ ಮಾಡುವುದಿಲ್ಲ."
+    }
+  }
+}

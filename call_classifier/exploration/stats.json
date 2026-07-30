@@ -1,0 +1,683 @@
+{
+  "inventory": {
+    "icfd": {
+      "n_files": 265,
+      "total_mb": 64.66,
+      "extensions": {
+        ".metadata": 88,
+        ".lock": 88,
+        ".parquet": 68,
+        ".zst": 15,
+        "(none)": 2,
+        ".jsonl": 1,
+        ".md": 1,
+        ".sha256": 1,
+        ".json": 1
+      },
+      "hf_cache_files": 177,
+      "note": "'.cache/huggingface' files are HuggingFace download-cache artifacts (.lock/.metadata), not dataset content.",
+      "encodings": {
+        "dataset_manifest.jsonl": "utf-8",
+        "README.md": "utf-8",
+        "release_summary.json": "utf-8"
+      }
+    },
+    "call-center": {
+      "n_files": 40,
+      "total_mb": 1398.93,
+      "extensions": {
+        ".metadata": 13,
+        ".lock": 13,
+        ".zip": 11,
+        "(none)": 2,
+        ".md": 1
+      },
+      "hf_cache_files": 27,
+      "note": "'.cache/huggingface' files are HuggingFace download-cache artifacts (.lock/.metadata), not dataset content.",
+      "encodings": {
+        "README.md": "utf-8"
+      }
+    },
+    "call-transcript": {
+      "n_files": 1,
+      "total_mb": 0.17,
+      "extensions": {
+        ".csv": 1
+      },
+      "hf_cache_files": 0,
+      "note": "'.cache/huggingface' files are HuggingFace download-cache artifacts (.lock/.metadata), not dataset content.",
+      "encodings": {
+        "BETTER30.csv": "utf-8"
+      }
+    },
+    "youtube-scam": {
+      "n_files": 1,
+      "total_mb": 0.2,
+      "extensions": {
+        ".csv": 1
+      },
+      "hf_cache_files": 0,
+      "note": "'.cache/huggingface' files are HuggingFace download-cache artifacts (.lock/.metadata), not dataset content.",
+      "encodings": {
+        "FullTranscriptData.csv": "utf-8"
+      }
+    },
+    "icfd_checksums": {
+      "available": true,
+      "total": 83,
+      "passed": 83,
+      "failed": 0,
+      "missing": 0,
+      "failures": []
+    }
+  },
+  "call_transcript": {
+    "n_rows": 650,
+    "n_conversations": 65,
+    "steps_per_conversation": {
+      "n": 65,
+      "min": 3.0,
+      "p25": 8.0,
+      "median": 9.0,
+      "mean": 10.0,
+      "p75": 12.0,
+      "p95": 15.0,
+      "max": 17.0
+    },
+    "label_per_row": {
+      "neutral": 158,
+      " scam": 138,
+      " scam_response": 117,
+      "scam": 82,
+      "legitimate": 43,
+      " neutral": 35,
+      "suspicious": 32,
+      " legitimate": 14,
+      "slightly_suspicious": 8,
+      "potential_scam": 7,
+      "highly_suspicious": 3,
+      "scam_response": 3,
+      " citing urgency\"": 2,
+      "polite_ending": 1,
+      "standard_opening, identification_request": 1,
+      " dismissing official protocols\"": 1,
+      " emphasizing security and compliance\"": 1,
+      " ready for further engagement\"": 1,
+      " suggesting a dangerous situation\"": 1,
+      "Scam": 1,
+      " adhering to protocols\"": 1
+    },
+    "label_per_conversation": {
+      "neutral": 19,
+      " scam": 19,
+      "scam": 11,
+      "legitimate": 5,
+      "suspicious": 4,
+      " scam_response": 4,
+      " legitimate": 2,
+      "potential_scam": 1
+    },
+    "length": {
+      "chars": {
+        "n": 650,
+        "min": 9.0,
+        "p25": 88.0,
+        "median": 135.0,
+        "mean": 140.76,
+        "p75": 180.0,
+        "p95": 251.64999999999986,
+        "max": 347.0
+      },
+      "words": {
+        "n": 650,
+        "min": 2.0,
+        "p25": 15.0,
+        "median": 22.0,
+        "mean": 23.35,
+        "p75": 29.0,
+        "p95": 41.0,
+        "max": 60.0
+      }
+    },
+    "annotations_json_keys": {},
+    "stage_term_hits": {
+      "FEATURES": {
+        "step": 2,
+        "tactic": 3,
+        "intent": 6,
+        "authority": 10,
+        "isolation": 2,
+        "accusation": 1,
+        "urgency": 48
+      },
+      "ANNOTATIONS": {
+        "step": 2,
+        "tactic": 2,
+        "intent": 1,
+        "urgency": 13
+      },
+      "CONTEXT": {
+        "step": 5,
+        "tactic": 1,
+        "intent": 6,
+        "authority": 1,
+        "urgency": 26
+      },
+      "CONVERSATION_STEP": {}
+    },
+    "features_examples": [
+      "welcoming, positive_tone",
+      "inclusive",
+      "helpful_tone, offers_options",
+      "prompt_action",
+      "supportive, positive_tone",
+      "authority_figure, urgency"
+    ],
+    "annotations_examples": [
+      "Potential scam, no prior relationship",
+      " booking_inquiry\"",
+      " detail_inquiry\"",
+      " email_confirmation\"",
+      " system_delay_explanation\"",
+      " dress_code_info\""
+    ],
+    "speaker_prefix_in_20": 0,
+    "columns": [
+      "CONVERSATION_ID",
+      "CONVERSATION_STEP",
+      "TEXT",
+      "CONTEXT",
+      "LABEL",
+      "FEATURES",
+      "ANNOTATIONS",
+      "chars",
+      "words"
+    ]
+  },
+  "youtube_scam": {
+    "n_rows": 243,
+    "columns": [
+      "ID",
+      "Source",
+      "Content",
+      "Char_Len",
+      "chars",
+      "words"
+    ],
+    "has_label_column": false,
+    "all_scam": true,
+    "source_url_rate": 0.963,
+    "source_examples": [
+      "https://www.youtube.com/watch?v=UG-KjCSt14k&ab_channel=JimBrowning",
+      "https://www.patreon.com/JimBrowning/posts?filters[media_types]=audio",
+      "https://www.youtube.com/watch?v=P6dhteJIY48&ab_channel=JimBrowning",
+      "https://www.youtube.com/watch?v=HlTpousFPsM&ab_channel=FTCvideos",
+      "https://www.youtube.com/watch?v=8sT121uUFOo&ab_channel=FTCvideos"
+    ],
+    "length": {
+      "chars": {
+        "n": 243,
+        "min": 133.0,
+        "p25": 510.5,
+        "median": 767.0,
+        "mean": 759.08,
+        "p75": 978.5,
+        "p95": 1251.0999999999995,
+        "max": 1422.0
+      },
+      "words": {
+        "n": 243,
+        "min": 23.0,
+        "p25": 106.0,
+        "median": 154.0,
+        "mean": 152.55,
+        "p75": 202.5,
+        "p95": 251.79999999999995,
+        "max": 306.0
+      }
+    },
+    "language_buckets": {
+      "english": 243
+    },
+    "redaction_tokens": {},
+    "speaker_prefix_lines_first50": 0,
+    "mean_newlines_per_record": 0.0,
+    "exact_dupes": 0,
+    "near_dupes": 0,
+    "empty_records": 0
+  },
+  "icfd": {
+    "source": {
+      "total_source_records": 31000,
+      "top_level_keys": {
+        "transcript": 31000,
+        "multimodal_analysis": 31000,
+        "key_entities": 31000,
+        "chunk_level_analysis": 30999,
+        "final_slow_thinking_rationale": 31000,
+        "final_verdict": 31000,
+        "violated_policies": 30999,
+        "scam_outcome": 31000,
+        "generation_metadata": 31000,
+        "session_id": 31000,
+        "agent_persona": 31000,
+        "customer_persona": 31000,
+        "scenario": 31000,
+        "release_metadata": 31000,
+        "chunk_level_analysis!": 1,
+        "violated_policies=": 1
+      },
+      "per_split_verdict": {
+        "cross_domain": {
+          "YES": 961,
+          "NO": 39
+        },
+        "test": {
+          "YES": 4477,
+          "NO": 23
+        },
+        "train": {
+          "YES": 6481,
+          "NO": 14519
+        },
+        "validation": {
+          "YES": 4474,
+          "NO": 26
+        }
+      },
+      "per_split_counts": {
+        "cross_domain": 1000,
+        "test": 4500,
+        "train": 21000,
+        "validation": 4500
+      },
+      "per_split_case_type": {
+        "cross_domain": {
+          "Subtle_Fraud": 240,
+          "Clear_Fraud": 760
+        },
+        "test": {
+          "Clear Fraud": 4500
+        },
+        "train": {
+          "Clear Fraud": 2000,
+          "Clear Normal": 10000,
+          "Ambiguous but Ultimately Normal": 5000,
+          "Subtle Fraud": 4000
+        },
+        "validation": {
+          "Clear Fraud": 3500,
+          "Subtle Fraud": 1000
+        }
+      },
+      "domains": {
+        "cross_domain": {
+          "cross_domain_1": 200,
+          "cross_domain_2": 200,
+          "cross_domain_3": 200,
+          "cross_domain_4": 200,
+          "cross_domain_5": 200
+        },
+        "test": {
+          "bank_payment_fraud": 450,
+          "ecommerce_marketplace": 450,
+          "utility_bill_service": 450,
+          "job_employment": 450,
+          "loan_shark_harassment": 450,
+          "tech_support_account": 450,
+          "personal_emergency_extortion": 450,
+          "insurance_healthcare": 450,
+          "travel_lottery": 450,
+          "government_impersonation": 450
+        },
+        "train": {
+          "bank_payment_fraud": 2100,
+          "ecommerce_marketplace": 2100,
+          "utility_bill_service": 2100,
+          "job_employment": 2100,
+          "loan_shark_harassment": 2100,
+          "tech_support_account": 2100,
+          "personal_emergency_extortion": 2100,
+          "insurance_healthcare": 2100,
+          "travel_lottery": 2100,
+          "government_impersonation": 2100
+        },
+        "validation": {
+          "bank_payment_fraud": 450,
+          "ecommerce_marketplace": 450,
+          "utility_bill_service": 450,
+          "job_employment": 450,
+          "loan_shark_harassment": 450,
+          "tech_support_account": 450,
+          "personal_emergency_extortion": 450,
+          "insurance_healthcare": 450,
+          "travel_lottery": 450,
+          "government_impersonation": 450
+        }
+      },
+      "scam_outcome": {
+        "Successful": 8503,
+        "Failed": 8017,
+        "N/A": 14191,
+        "Interrupted": 289
+      },
+      "language_sample": {
+        "english": 58,
+        "hinglish": 4
+      },
+      "turns": {
+        "YES": {
+          "n": 16393,
+          "min": 5.0,
+          "p25": 11.0,
+          "median": 13.0,
+          "mean": 14.38,
+          "p75": 16.0,
+          "p95": 25.0,
+          "max": 95.0
+        },
+        "NO": {
+          "n": 14607,
+          "min": 4.0,
+          "p25": 10.0,
+          "median": 11.0,
+          "mean": 12.58,
+          "p75": 13.0,
+          "p95": 21.0,
+          "max": 97.0
+        }
+      },
+      "chars": {
+        "YES": {
+          "n": 16393,
+          "min": 339.0,
+          "p25": 1109.0,
+          "median": 1375.0,
+          "mean": 1436.64,
+          "p75": 1701.0,
+          "p95": 2271.3999999999996,
+          "max": 5643.0
+        },
+        "NO": {
+          "n": 14607,
+          "min": 184.0,
+          "p25": 887.0,
+          "median": 1131.0,
+          "mean": 1181.14,
+          "p75": 1407.0,
+          "p95": 1945.0,
+          "max": 4966.0
+        }
+      },
+      "chunk_level_analysis_per_conv": {
+        "n": 31000,
+        "min": 0.0,
+        "p25": 5.0,
+        "median": 5.0,
+        "mean": 5.97,
+        "p75": 7.0,
+        "p95": 10.0,
+        "max": 56.0
+      },
+      "mean_frac_chunkanalysis_YES": 0.353
+    },
+    "streaming": {
+      "sampled_shards": [
+        "train-00000-of-00050.parquet",
+        "train-00001-of-00050.parquet",
+        "validation-00000-of-00008.parquet",
+        "test-00000-of-00008.parquet",
+        "cross_domain-00000-of-00002.parquet"
+      ],
+      "columns": [
+        "dataset",
+        "release_version",
+        "split",
+        "domain",
+        "source_batch",
+        "source_file_stem",
+        "chunk_file",
+        "conversation_uid",
+        "session_id",
+        "chunk_timestamp",
+        "final_verdict",
+        "slow_thinking_rationale",
+        "cumulative_text",
+        "cumulative_transcript_json",
+        "cumulative_audio_analysis_json",
+        "scenario_info_json",
+        "scenario_id",
+        "case_type",
+        "combination_key",
+        "multiplier_round",
+        "generated_at"
+      ],
+      "chunks_per_conversation": {
+        "n": 2087,
+        "min": 1.0,
+        "p25": 23.0,
+        "median": 39.0,
+        "mean": 45.64,
+        "p75": 60.0,
+        "p95": 104.0,
+        "max": 118.0
+      },
+      "chunk_timestamp_examples": [
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        102,
+        105,
+        108,
+        111,
+        114,
+        117,
+        120,
+        123
+      ],
+      "cadence_delta_seconds_top": {
+        "3": 93164,
+        "90": 2
+      },
+      "cumulative_check": {
+        "length_monotonic": true,
+        "prefix_growing": true
+      },
+      "final_verdict_constant_within_conversation": true,
+      "note": "Streaming stats are from sampled shards (stated above), not all 1.11M chunks. 'cumulative_text' column name + the checks confirm chunks are CUMULATIVE (each contains all text so far)."
+    }
+  },
+  "call_center": {
+    "n_archives": 11,
+    "total_json_members": 191777,
+    "advertised_count": 91706,
+    "count_discrepancy": 100071,
+    "per_archive_counts": {
+      "(re-uploaded)PII_Redacted_Transcripts_aixblock-automotive-stereo-inbound-104h.zip": 1500,
+      "(reupload)PII_redacted_auto_insurance_script.zip": 3498,
+      "auto_insurance_customer_service_inbound.zip": 3498,
+      "automotive_and_healthcare_insurance_inbound.zip": 3586,
+      "automotive_inbound.zip": 15473,
+      "customer_service_general_inbound.zip": 2434,
+      "home_ervice_inbound&telecom _outbound.zip": 6478,
+      "home_service_inbound.zip": 22814,
+      "insurance_outbound.zip": 8010,
+      "medical_equipment_outbound.zip": 1476,
+      "medicare_inbound.zip": 123010
+    },
+    "sampled_per_archive": 40,
+    "schema": {
+      "text": "str",
+      "confidence": "float",
+      "audio_duration": "int",
+      "words": "list",
+      "redacted_pii_policies": "list"
+    },
+    "text_chars": {
+      "n": 221,
+      "min": 550.0,
+      "p25": 2774.0,
+      "median": 4382.0,
+      "mean": 5862.81,
+      "p75": 6323.0,
+      "p95": 18871.0,
+      "max": 38029.0
+    },
+    "text_words": {
+      "n": 221,
+      "min": 96.0,
+      "p25": 463.0,
+      "median": 742.0,
+      "mean": 982.64,
+      "p75": 1107.0,
+      "p95": 3007.0,
+      "max": 6170.0
+    },
+    "asr_confidence": {
+      "n": 221,
+      "min": 0.80354327,
+      "p25": 0.89364105,
+      "median": 0.9446046,
+      "mean": 0.93,
+      "p75": 0.95532495,
+      "p95": 0.9656414,
+      "max": 0.9803774
+    },
+    "audio_duration_s": {
+      "n": 221,
+      "min": 113.0,
+      "p25": 266.0,
+      "median": 410.0,
+      "mean": 532.15,
+      "p75": 613.0,
+      "p95": 1504.0,
+      "max": 3532.0
+    },
+    "speaker_populated_frac": 0.0,
+    "language_sample": {
+      "english": 221
+    },
+    "redaction_tokens": {
+      "[PERSON_NAME]": 4667,
+      "[ORGANIZATION]": 3092,
+      "[LOCATION]": 2099,
+      "[MONEY_AMOUNT]": 1233,
+      "[DATE]": 437,
+      "[PHONE_NUMBER]": 410,
+      "[EMAIL_ADDRESS]": 249
+    },
+    "duplicate_archive_check": {
+      "method": "pairwise filename (basename) Jaccard across archives",
+      "exact_duplicate_pairs": [
+        [
+          "(reupload)PII_redacted_auto_insurance_script.zip",
+          "auto_insurance_customer_service_inbound.zip",
+          "jaccard=1.000, 3498 identical files"
+        ]
+      ],
+      "subset_duplicates": [
+        [
+          "(re-uploaded)...automotive-stereo-inbound-104h.zip",
+          "fully contained in automotive_inbound.zip (1500/1500 files shared)"
+        ],
+        [
+          "auto_insurance (3498 files)",
+          "also contained in automotive_inbound.zip (j=0.226)"
+        ]
+      ],
+      "sum_members": 191777,
+      "unique_basenames": 181637,
+      "cross_archive_duplicate_files": 10140
+    },
+    "domains_from_filenames": [
+      "(re-uploaded)PII_Redacted_Transcripts_aixblock-automotive-stereo-inbound-104h.zip",
+      "(reupload)PII_redacted_auto_insurance_script.zip",
+      "auto_insurance_customer_service_inbound.zip",
+      "automotive_and_healthcare_insurance_inbound.zip",
+      "automotive_inbound.zip",
+      "customer_service_general_inbound.zip",
+      "home_ervice_inbound&telecom _outbound.zip",
+      "home_service_inbound.zip",
+      "insurance_outbound.zip",
+      "medical_equipment_outbound.zip",
+      "medicare_inbound.zip"
+    ],
+    "bank_or_government_domain": false,
+    "domain_note": "Domains: automotive, auto/health insurance, customer service, home service, telecom, medical equipment, medicare. NO bank / police / government fraud-desk calls \u2014 the hardest negatives are absent.",
+    "unique_transcripts_estimate": 181637
+  },
+  "cross_dataset": {
+    "sample_sizes": {
+      "youtube-scam": 243,
+      "call-transcript": 65,
+      "icfd": 3000,
+      "call-center": 826
+    },
+    "exact_normalized_overlap": {
+      "youtube-scam \u2229 call-transcript": 0,
+      "youtube-scam \u2229 icfd": 0,
+      "youtube-scam \u2229 call-center": 0,
+      "call-transcript \u2229 icfd": 0,
+      "call-transcript \u2229 call-center": 0,
+      "icfd \u2229 call-center": 0
+    },
+    "near_duplicate": {
+      "youtube-scam vs call-transcript": {
+        "max_jaccard": 0.01,
+        "pairs_over_threshold": 0,
+        "threshold": 0.5,
+        "example": null
+      },
+      "icfd vs youtube-scam": {
+        "max_jaccard": 0.01,
+        "pairs_over_threshold": 0,
+        "threshold": 0.5,
+        "example": null
+      },
+      "icfd vs call-transcript": {
+        "max_jaccard": 0.015,
+        "pairs_over_threshold": 0,
+        "threshold": 0.5,
+        "example": null
+      },
+      "youtube-scam vs call-center": {
+        "max_jaccard": 0.088,
+        "pairs_over_threshold": 0,
+        "threshold": 0.5,
+        "example": null
+      }
+    },
+    "sms_flag": {
+      "youtube-scam": {
+        "median_words": 154.0,
+        "frac_under_25_words": 0.004,
+        "looks_like_sms": false
+      },
+      "call-transcript": {
+        "median_words": 213.0,
+        "frac_under_25_words": 0.0,
+        "looks_like_sms": false
+      },
+      "icfd": {
+        "median_words": 274.0,
+        "frac_under_25_words": 0.0,
+        "looks_like_sms": false
+      },
+      "call-center": {
+        "median_words": 741.0,
+        "frac_under_25_words": 0.0,
+        "looks_like_sms": false
+      }
+    },
+    "notes": "ICFD & call-center are sampled (3000 / 1500). call-transcript is conversation-level (65). youtube-scam is all 243."
+  }
+}

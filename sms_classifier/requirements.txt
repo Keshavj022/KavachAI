@@ -1,0 +1,18 @@
+# SMS classifier — pinned for reproducibility (Python 3.11–3.13).
+# Classical stack (required for phases 1–5, 7–9):
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.14.1
+matplotlib==3.9.2
+pyarrow==18.1.0
+joblib==1.4.2
+wordcloud==1.9.4
+
+# Transformer stack (phase 6 only; the pipeline runs without it and simply
+# skips the transformer if these are absent). torch>=2.6 is required for
+# Python 3.13 wheels:
+torch==2.8.0
+transformers==4.46.3
+datasets==3.1.0
+accelerate==1.1.1

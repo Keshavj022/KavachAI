@@ -1,0 +1,18 @@
+{
+  "record_schema": {
+    "text": "str",
+    "confidence": "float",
+    "audio_duration": "int",
+    "words": "list",
+    "redacted_pii_policies": "list"
+  },
+  "words_item": {
+    "text": "str",
+    "start": "ms",
+    "end": "ms",
+    "confidence": "float",
+    "speaker": "often null (mono ASR)"
+  },
+  "label": "NONE \u2014 all legitimate call-center calls (our negatives)",
+  "note": "Flat 'text' field per call; word-level timestamps in 'words'."
+}

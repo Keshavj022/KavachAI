@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "nativeName": "മലയാളം",
+    "dir": "ltr"
+  },
+  "_note": "Machine/partial translation — professional review recommended before production deployment.",
+  "nav": {
+    "call": "കോൾ",
+    "decoy": "ഡികോയ്",
+    "shield": "ഷീൽഡ്",
+    "report": "റിപ്പോർട്ട്",
+    "contacts": "കോൺടാക്റ്റുകൾ",
+    "signOut": "സൈൻ ഔട്ട്",
+    "staySafe": "സുരക്ഷിതരായിരിക്കുക"
+  },
+  "lang": {
+    "choose": "ഭാഷ"
+  },
+  "home": {
+    "learnTitle": "സുരക്ഷിതരായിരിക്കാൻ പഠിക്കുക",
+    "learnCta": "സുരക്ഷിതരായിരിക്കാൻ പഠിക്കുക"
+  },
+  "guide": {
+    "title": "സുരക്ഷിതരായിരിക്കുക",
+    "c2": {
+      "phrase": "യഥാർത്ഥ പോലീസ് ഒരിക്കലും വിളിക്കില്ല."
+    }
+  }
+}

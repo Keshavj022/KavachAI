@@ -1,0 +1,21 @@
+{
+  "run": {
+    "detector": "fallback",
+    "model": "rule-based",
+    "prompt_version": "call-detect-v1",
+    "timestamp": "2026-07-09 17:39:01"
+  },
+  "fraud_call": null,
+  "held_out": {
+    "aggregate": {
+      "n_calls": 0,
+      "classified_scam": 0,
+      "fired_before_money_demand": 0,
+      "calls_with_money_marker": 0,
+      "median_lead_turns": null,
+      "mean_lead_turns": null,
+      "stages_in_order": 0
+    },
+    "per_call": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "tech_support_en",
+  "title": "Tech Support — English",
+  "language": "en",
+  "turns": [
+    {
+      "speaker": "scammer",
+      "text": "Hello sir, this is Michael from Microsoft technical support. We have detected a serious virus on your computer that is stealing your banking information.",
+      "delay_ms": 1000,
+      "agent_text": "Oh, Microsoft? Yes, my computer has been very slow these days. What is the problem, sir?"
+    },
+    {
+      "speaker": "scammer",
+      "text": "Your IP address has been flagged for suspicious activity. Hackers have gained access to your bank account and are trying to withdraw your money right now.",
+      "delay_ms": 3000,
+      "agent_text": "Hackers? Oh dear. I don't understand these computer things well. Please tell me slowly."
+    },
+    {
+      "speaker": "scammer",
+      "text": "You must not tell anyone or turn off your computer. Stay on the line with me. This is a confidential security matter and disconnecting will lock your account permanently.",
+      "delay_ms": 3000,
+      "agent_text": "Alright, alright. Wait, let me get my spectacles... this screen is not very clear to me."
+    },
+    {
+      "speaker": "scammer",
+      "text": "To secure your funds, you need to move 1 lakh rupees to our protected account immediately. The UPI is secure.support@okaxis and the account number is 50100234567890.",
+      "delay_ms": 3000,
+      "agent_text": "One lakh rupees? That is a lot of money. Let me call my son, he handles the computer. I will call you back."
+    }
+  ],
+  "expected_arc": ["authority_claim", "accusation", "isolation", "money_demand"],
+  "expected_interrupt_before_turn": 3
+}
